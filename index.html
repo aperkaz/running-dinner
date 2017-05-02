@@ -31,7 +31,7 @@
                         </div>
                         <div class="panel-body">
                             <div class="form-group">
-                              <input  id="group-name" type="text" class="form-control">
+                                <input id="group-name" type="text" class="form-control">
                             </div>
                             <div class="checkbox">
                                 <input id="group-vegetarian" type="checkbox">Vegetarians<br>
@@ -54,37 +54,38 @@
             </div>
 
             <div id="results-button">
-                    <button type="button" class="btn btn-primary" onclick="generateResults()">Generate Results</button>
+                <button type="button" class="btn btn-primary" onclick="generateResults()">Generate Results</button>
             </div>
 
 
             <div id="results">
-                <h4>Results</h4>
-
-
-                <div class="container">
-                    <table class="table table-hover table-striped">
-                        <thead class="thead-inverse">
-                            <tr>
-                                <th>
-                                    <p class="text-center">Starter</p>
-                                </th>
-                                <th>
-                                    <p class="text-center">Main</p>
-                                </th>
-                                <th>
-                                    <p class="text-center">Dessert</p>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody id="group-list">
-                        </tbody>
-                    </table>
+                <div class="row">
+                    <div class="col-xs-offset-2 col-xs-8">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                    <table class="table table-hover ">
+                                        <thead class="thead-inverse">
+                                            <tr>
+                                                <th>
+                                                    <p class="text-center">Starter</p>
+                                                </th>
+                                                <th>
+                                                    <p class="text-center">Main</p>
+                                                </th>
+                                                <th>
+                                                    <p class="text-center">Dessert</p>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="group-list">
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </div>
                 </div>
-
-
             </div>
-
+            </div>
+</div>
 
 </body>
 

@@ -66,4 +66,5 @@ function publishGroup(pack){
 
 function cleanTable(){
   setHTML('group-list', '');
+  document.getElementById('results').style.display = "none";
 }

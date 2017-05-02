@@ -1,31 +1,21 @@
+var groupsClone;
+var vegGroupsClone;
+
 /*  Group Matching Algorithing*/
 function generateResults(){
   cleanTable();
-  shuffleGroups();
+  if(groups.length > 0 || vegGroups.length > 0){
+    document.getElementById("results").style.display = "block";
+    shuffleGroups();
+  }
 }
 
-
-function shuffleGroups(){
-
-  pack = [];
-
-  var groupsClone = jQuery.extend(true, [], groups);
-  var vegGroupsClone = vegGroups.slice(0);
-  console.log(groups);
-  console.log(groupsClone);
-  console.log(vegGroups);
-  console.log('vegs: ',vegGroupsClone);
-
-  // match veggies
+function matchVegetarians(){
   while(vegGroupsClone.length > 0 && vegGroupsClone.length !== "undefined"){
-    console.log('matching vegies');
     var index = Math.floor(Math.random() * vegGroupsClone.length);
-    console.log('index: ',index)
-    console.log('Adding veg: ',vegGroupsClone[index]);
     pack.push(vegGroupsClone[index]);
     vegGroupsClone.splice(index,1);
     if(pack.length >= 3){
-      console.log('Publishing: ',pack);
        publishGroup(pack);
        pack = [];
     }
@@ -33,33 +23,40 @@ function shuffleGroups(){
 
  // fill veggie groups
   while(pack.length > 0 && pack.length < 3 && groupsClone.length > 0){
-    console.log('filling vegie group');
-
-      console.log('Adding normal: '+groupsClone[0]);
       pack.push(groupsClone[0]);
       groupsClone.splice(0,1);
 
   }
-  console.log('Publishing: ',pack);
   publishGroup(pack);
   pack = [];
+}
 
-  // match normals
+function matchMeatEaters(){
   while( groupsClone.length > 0){
 
     var index = Math.floor(Math.random() * groupsClone.length );
-    console.log('Adding normal: ',groupsClone[index]);
     pack.push(groupsClone[index]);
     groupsClone.splice(index,1);
     if(pack.length >= 3){
-       console.log('Publishing: ',pack);
        publishGroup(pack);
        pack = [];
     }
   }
+
   if(pack.length > 0){
-    console.log('OUT: ',pack);
     publishGroup(pack);
   }
+}
+
+function shuffleGroups(){
   pack = [];
+
+  groupsClone = groups.slice(0);
+  vegGroupsClone = vegGroups.slice(0);
+
+  // match veggies
+  matchVegetarians();
+
+  // match normals
+  matchMeatEaters();
 }
