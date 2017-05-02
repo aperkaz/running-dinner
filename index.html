@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Running Dinner</title>
+  <!-- Custom -->
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="scripts/main.js"></script>
+</head>
+<body>
+
+  <div class="mainBody">
+    <div class="header">
+      <h1>Running dinner &#128526;</h1>
+    </div>
+    <div id="main">
+      <div>
+          <div class="row">
+      <div class="col">
+         <h4>Add participant</h4>
+        <div>
+          <br/>
+          <input id="group-name" type="text" name="group-name" >
+          <br>
+          <input id="group-vegetarian" type="checkbox" name="vegetarian">Vegetarians<br>
+          <br>
+          <button onclick="addGroup()">Add</button>
+        </div>
+
+      </div>
+      <div class="col">
+        <h4>Groups</h4>
+        <div id="added-groups"></div>
+        <button onclick="cleanGroups()">Clean All</button>
+      </div>
+    </div>
+        <hr />
+       <button onclick="generateResults()">Generate Results</button>
+      <br /><br />
+      <div>
+        <h4>Results</h4>
+
+
+     <div class="container">
+      <table class="table table-hover table-striped">
+        <thead class="thead-inverse">
+          <tr>
+            <th><p class="text-center">Starter</p></th>
+            <th><p class="text-center">Main</p></th>
+            <th><p class="text-center">Dessert</p></th>
+          </tr>
+        </thead>
+        <tbody id="group-list">
+        </tbody>
+      </table>
+      </div>
+
+
+       </div>
+  </div>
+
+</body>
+</html>
