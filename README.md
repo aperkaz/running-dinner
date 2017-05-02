@@ -1,6 +1,7 @@
 # running-dinner
 :fork_and_knife:  Running dinner group randomizer.
-
+</br></br>
+![app](https://cloud.githubusercontent.com/assets/16224847/25619931/e742a634-2f4c-11e7-9770-c69a9ff791f1.PNG)
 # Features
 - [X] Group categorization by meal preference type (vegetarian / meat eaters)
 - [X] List of current added groups
