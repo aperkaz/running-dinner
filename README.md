@@ -6,8 +6,8 @@
 - [X] List of current added groups
 - [X] Run the randomizing algorithm multiple times over the same set
 - [X] Algorithm matches vegetarians with meat eaters only when necessary
-- [] prettified with [Bootstrap](http://getbootstrap.com/)
-- [] Animated with [Animate.css](https://daneden.github.io/animate.css/)   
+- [ ] prettified with [Bootstrap](http://getbootstrap.com/)
+- [ ] Animated with [Animate.css](https://daneden.github.io/animate.css/)   
 
 ## Credits
 
