@@ -1,11 +1,30 @@
-.mainBody{
-  text-align: center;
-  margin-bottom: 30px;
-  width: 100%;
+.mainBody {
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    /* Footer Height */
+    top: 0px;
+    /* Header Height */
+    width: 100%;
+    background: url(https://www.toptal.com/designers/subtlepatterns/patterns/seigaiha.png);
 }
 
 .header {
-  padding-top: 15px;
-  padding-bottom: 25px;
-  color: #70A4F1;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #70A4F1;
+}
+
+#results {
+    display: none;
+}
+
+#results-button {
+    padding-top: 40px;
+}
+
+#added-groups{
+    padding-bottom: 15px;
 }
