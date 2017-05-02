@@ -6,7 +6,7 @@
 - [X] List of current added groups
 - [X] Run the randomizing algorithm multiple times over the same set
 - [X] Algorithm matches vegetarians with meat eaters only when necessary
-- [X] prettified with [Bootstrap](http://getbootstrap.com/)
+- [X] Prettified with [Bootstrap](http://getbootstrap.com/)
 
 ## Credits
 
